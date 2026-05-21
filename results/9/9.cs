@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
 
 class Solution
@@ -31,9 +30,9 @@ class Solution
 
     public static void Main(string[] args)
     {
-        int arrCount = Convert.ToInt32(Console.ReadLine().Trim());
+        int arrCount = Convert.ToInt32(Console.ReadLine()!.Trim());
 
-        List<int> arr = Console.ReadLine().Trim().Split(' ').ToList().Select(arrTemp => Convert.ToInt32(arrTemp)).ToList();
+        List<int> arr = Console.ReadLine()!.Trim().Split(' ').ToList().Select(arrTemp => Convert.ToInt32(arrTemp)).ToList();
 
         int result = migratoryBirds(arr);
 
