@@ -1,5 +1,4 @@
 using System;
-using System.IO;
 
 class Solution
 {
@@ -17,7 +16,7 @@ class Solution
 
     public static void Main(string[] args)
     {
-        string[] firstMultipleInput = Console.ReadLine().Trim().Split(' ');
+        string[] firstMultipleInput = Console.ReadLine()!.Trim().Split(' ');
 
         int x1 = Convert.ToInt32(firstMultipleInput[0]);
         int v1 = Convert.ToInt32(firstMultipleInput[1]);
