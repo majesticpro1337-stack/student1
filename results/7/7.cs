@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
 
 class Solution
@@ -48,12 +47,12 @@ class Solution
 
     public static void Main(string[] args)
     {
-        string[] firstMultipleInput = Console.ReadLine().Trim().Split(' ');
+        string[] firstMultipleInput = Console.ReadLine()!.Trim().Split(' ');
         int n = Convert.ToInt32(firstMultipleInput[0]);
         int m = Convert.ToInt32(firstMultipleInput[1]);
 
-        List<int> arr = Console.ReadLine().Trim().Split(' ').ToList().Select(arrTemp => Convert.ToInt32(arrTemp)).ToList();
-        List<int> brr = Console.ReadLine().Trim().Split(' ').ToList().Select(brrTemp => Convert.ToInt32(brrTemp)).ToList();
+        List<int> arr = Console.ReadLine()!.Trim().Split(' ').ToList().Select(arrTemp => Convert.ToInt32(arrTemp)).ToList();
+        List<int> brr = Console.ReadLine()!.Trim().Split(' ').ToList().Select(brrTemp => Convert.ToInt32(brrTemp)).ToList();
 
         int total = getTotalX(arr, brr);
 
