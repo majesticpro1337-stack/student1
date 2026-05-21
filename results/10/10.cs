@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
 
 class Solution
@@ -28,9 +27,9 @@ class Solution
 
     public static void Main(string[] args)
     {
-        int n = Convert.ToInt32(Console.ReadLine().Trim());
+        int n = Convert.ToInt32(Console.ReadLine()!.Trim());
 
-        List<int> ar = Console.ReadLine().Trim().Split(' ').ToList().Select(arTemp => Convert.ToInt32(arTemp)).ToList();
+        List<int> ar = Console.ReadLine()!.Trim().Split(' ').ToList().Select(arTemp => Convert.ToInt32(arTemp)).ToList();
 
         int result = sockMerchant(n, ar);
 
