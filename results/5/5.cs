@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
 
 class Solution
@@ -34,20 +33,20 @@ class Solution
 
     public static void Main(string[] args)
     {
-        string[] firstMultipleInput = Console.ReadLine().Trim().Split(' ');
+        string[] firstMultipleInput = Console.ReadLine()!.Trim().Split(' ');
         int s = Convert.ToInt32(firstMultipleInput[0]);
         int t = Convert.ToInt32(firstMultipleInput[1]);
 
-        string[] secondMultipleInput = Console.ReadLine().Trim().Split(' ');
+        string[] secondMultipleInput = Console.ReadLine()!.Trim().Split(' ');
         int a = Convert.ToInt32(secondMultipleInput[0]);
         int b = Convert.ToInt32(secondMultipleInput[1]);
 
-        string[] thirdMultipleInput = Console.ReadLine().Trim().Split(' ');
+        string[] thirdMultipleInput = Console.ReadLine()!.Trim().Split(' ');
         int m = Convert.ToInt32(thirdMultipleInput[0]);
         int n = Convert.ToInt32(thirdMultipleInput[1]);
 
-        List<int> apples = Console.ReadLine().Trim().Split(' ').ToList().Select(applesTemp => Convert.ToInt32(applesTemp)).ToList();
-        List<int> oranges = Console.ReadLine().Trim().Split(' ').ToList().Select(orangesTemp => Convert.ToInt32(orangesTemp)).ToList();
+        List<int> apples = Console.ReadLine()!.Trim().Split(' ').ToList().Select(applesTemp => Convert.ToInt32(applesTemp)).ToList();
+        List<int> oranges = Console.ReadLine()!.Trim().Split(' ').ToList().Select(orangesTemp => Convert.ToInt32(orangesTemp)).ToList();
 
         countApplesAndOranges(s, t, a, b, apples, oranges);
     }
