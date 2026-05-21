@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
 
 class Solution
@@ -32,9 +31,9 @@ class Solution
 
     public static void Main(string[] args)
     {
-        int n = Convert.ToInt32(Console.ReadLine().Trim());
+        int n = Convert.ToInt32(Console.ReadLine()!.Trim());
 
-        List<int> scores = Console.ReadLine().Trim().Split(' ').ToList().Select(scoresTemp => Convert.ToInt32(scoresTemp)).ToList();
+        List<int> scores = Console.ReadLine()!.Trim().Split(' ').ToList().Select(scoresTemp => Convert.ToInt32(scoresTemp)).ToList();
 
         List<int> result = breakingRecords(scores);
 
